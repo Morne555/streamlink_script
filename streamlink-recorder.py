@@ -18,7 +18,7 @@ for x in (0, len(streamOptions)-1):
 streamBuilder.append(streamURL)
 streamBuilder.append(streamQuality)
 streamBuilder.append("-o")
-streamBuilder.append("/download/"+streamName+"-"+time.strftime("_%Y-%m-%d_%H-%M-%S")+".mp4")
+streamBuilder.append("/download/"+streamName+"-"+time.strftime("%Y-%m-%d_%H-%M-%S")+".mp4")
 
 while True:
 	call(streamBuilder)
